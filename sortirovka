@@ -1,0 +1,9 @@
+temp = {x['id']: x for x in aaa}
+
+res =[]
+for x in bbb:
+    y = temp.get(x)
+    if y is not None:
+        res.append(y)
+
+print(res)
